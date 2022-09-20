@@ -12,5 +12,5 @@ export const awsConfig = {
 }
 
 export const targetConfig = {
-    target_pools: ["803", "498"]
+    target_pools: ["803"]
 }

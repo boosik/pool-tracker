@@ -49,6 +49,11 @@ export function getByTime(startTime, endTime) {
     return docClient.scan(param).promise();
 }
 
-export function getAll() {
-    return "";
+export function getItems() {
+    AWS.config.update(awsConfig.aws_remote_config);
+    const docClient = new AWS.DynamoDB.DocumentClient();
+    const param = {
+        TableName: awsConfig.aws_table_name,
+    }
+    return docClient.scan(param).promise();
 }
