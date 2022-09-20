@@ -1,7 +1,7 @@
 import WebSocket from 'ws';
 import Worker from "worker_threads";
 
-const webSocket = new WebSocket("wss://rpc-osmosis.blockapsis.com/websocket")
+export const webSocket = new WebSocket("wss://rpc-osmosis.blockapsis.com/websocket")
 
 console.log('start');
 

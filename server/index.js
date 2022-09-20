@@ -1,5 +1,6 @@
 import express from "express";
 import {getByTime} from "../dynamoDB/db.js";
+import {webSocket} from "../app/index.js";
 
 const app = express();
 
